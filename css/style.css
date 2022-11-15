@@ -1,0 +1,119 @@
+body {
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px gray;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-right: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+header ul li a:hover {
+    border-bottom: 2px solid cornflowerblue;
+}
+
+main {
+    display: flex;
+}
+
+article {
+    flex: 3;
+    margin-right: 10px;
+}
+
+aside {
+    flex: 1;
+}
+
+.mon_bloc {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    /*position: absolute;*/
+    /*bottom: 10px;*/
+}
+
+footer ul {
+    list-style: none;
+}
+
+form {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.group {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.group label {
+    width: 20%;
+}
+
+.fomr-control {
+    width: 80%;
+    height: 35px;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 7px;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.success {
+    background: green;
+}
+
+.danger {
+    background: red;
+}
+
+#ville {
+    width: 35%;
+}
+
+.btns {
+    position: relative;
+    left: 80%;
+}
+
+@media only screen and (max-width:700px) {
+    ul,
+    main {
+        flex-direction: column;
+    }
+}
